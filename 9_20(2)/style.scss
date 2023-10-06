@@ -1,0 +1,100 @@
+.page{
+    width: 97vw;
+    display: flex;
+    background-color: cadetblue;
+}
+
+.header{
+    height: 98vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;    
+    p{
+        position: absolute;
+        top: 20%;
+        right: 42%;
+        height: 50px;
+        font-size: 45px;
+    }
+    .email{
+        position: absolute;
+        top: 40%;
+        left: 35%;
+        font-size: 18px;
+    }
+    .emailinput{
+            position: absolute;
+            top: 43%;
+            left: 1.5%;
+            width: 32.8%;
+            height: 25%;
+            position:relative;
+            display:inline-block;        
+                i{
+                    position: absolute;
+                    left: 3px;
+                    top: 10%;
+                }
+                input{
+                    width: 85%;
+                    height: 25%;
+                    padding-left: 20px;        
+                }
+    }
+    .password{
+        position: absolute;
+        top: 52%;
+        left: 35%;
+        font-size: 18px;
+    }
+    .passwordinput{
+        position: absolute;
+            top: 55%;
+            left: 35%;
+            width: 34.7%;
+            height: 25%;
+        input{
+            width: 85%;
+            height: 25%;
+        }
+    }
+    .checkbox{
+        position: absolute;
+        top: 64%;
+        left: 34.7%;
+        height: 50px;
+        width: 250px;
+        input{
+            height: 25px;
+            width: 25px;  
+        }
+        label{
+            margin-bottom: 240px;
+        }
+    }
+    .sign{
+        position: absolute;
+        top: 64%;
+        left: 58.7%;
+        height: 55px;
+        width: 150px;
+        padding-top: 4px;
+        padding-left: 0px;
+        input{
+            height: 25px;
+            width: 80px;
+        }
+    }
+    .login{
+        position: absolute;
+        top: 70%;
+        left: 46%;
+        height: 55px;
+        width: 150px;
+        input{
+            height: 50px;
+            width: 100px;
+        }
+    }
+}

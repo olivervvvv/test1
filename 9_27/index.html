@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+                <h5>找質數</h5>
+            </div>
+    </div>
+    <div class="container centered-container">
+        
+        <div class="inputmath">
+            <span>找</span>
+            <input type="number" id="textInput" placeholder="輸入數字">
+            <span>以內的質數:</span>
+            <input type="button" id="button" value="搜尋">
+        </div>
+        <div class="spanview">
+            <span>總共: </span>
+            <span id="total"> _ _ </span>
+            <span> 個</span>
+        </div>
+        <div class="outmathview" style="overflow: auto;">
+            <span id="displayview">2, 3, 5, 7, 11</span>
+        </div>
+    </div>
+    <script src="./introl.js"></script>
+</body>
+</html>

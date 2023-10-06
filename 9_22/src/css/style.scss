@@ -1,0 +1,90 @@
+.row{    
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    .col-md-4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 99vw;
+        height: 100px;
+    img{
+        height: 70px;
+        width: 70px;
+        background-color: rgb(151, 173, 173);
+        margin-right: 40%;
+        margin-top: 0px;
+    }
+}
+    .bodyer{
+    width: 18%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 0%;
+    .breadcrumb{
+        background-color: white;
+        padding-top: 50px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 40px;
+        margin-left: 0px;
+    }
+}
+    .btn-group{
+        margin-top: 11.5%;
+        
+    }
+    span{
+        position: absolute;
+        right: 25%;
+        top: 44%;
+    }
+}
+.rightmod4{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    .btn{
+        background-color: #636c72;
+    }
+}
+
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    color: #636c72;
+    content: "|";
+    font-size: 15px;
+}
+.btn-outline-green {
+    color: #5cb85c;
+    background-image: none;
+    background-color: transparent;
+    border-color: #5cb85c;
+  }
+  
+  .btn-outline-green:hover {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+  }
+  
+  .btn-outline-green:focus, .btn-outline-green.focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(217, 83, 79, 0.5);
+            box-shadow: 0 0 0 2px rgba(217, 83, 79, 0.5);
+  }
+  
+  .btn-outline-green.disabled, .btn-outline-green:disabled {
+    color: #5cb85c;
+    background-color: transparent;
+  }
+  
+  .btn-outline-green:active, .btn-outline-green.active,
+  .show > .btn-outline-green.dropdown-toggle {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+  }

@@ -1,0 +1,144 @@
+@import "./footer";
+@mixin line($linetop){ 
+    position: absolute;
+        top: $linetop;
+        left: 15%;
+        width: 0px;
+        height: 50%;
+        border: 1px solid white;
+  }
+body{
+    background-color: rgb(177, 180, 180);
+    position: relative;
+    .homepage{
+        width: 98vw;
+    }
+    img{
+        position: absolute;
+        top: 3%;
+        left: 2%;
+    }
+    .line0{
+       @include line(3%);
+    }
+    .line1{
+        @include line(70%);
+        left: 18%;
+        height: 15%;
+        z-index: 2;
+    }
+}
+.side-container {
+    width: 98.6vw;
+    height: 97.3vh;
+}
+.hamburger{
+    position: absolute;
+    top: 3%;
+}
+.menu-icon{
+    width: 3%;
+    transition: 450ms;
+    margin-left: 0;
+    &:hover{
+        width: 4%;
+    }
+}
+.menu-icon_hamburger {
+    background-color: bisque;
+    
+}
+.menu-icon_hamburger:before, .menu-icon_hamburger:after {
+    background: rgb(0, 0, 0);
+}
+.leftsidebar{
+    width: 15%; margin: 0; 
+    position: absolute;
+    top: 40%;
+    left: 4%;
+}
+.leftsidebar ul{
+    list-style-type:none; padding: 0;margin: 0;
+width: 50px;
+}
+.leftsidebar li{
+    margin:0 0 10px; padding:0; line-height: 28px;
+    width: 50px;
+}
+.leftsidebar a{
+                font-size:16px; color: #000;
+                text-decoration:none;
+                position:relative;
+                overflow:hidden;
+                display:inline-block;
+}
+.leftsidebar a:hover {
+    color: #656565;text-decoration: none;}
+.leftsidebar a::after{
+        content:" ";
+        display:block; width: 0%;height: 1px;background-color: #656565;transition: .4s .2s;}
+.leftsidebar a:hover::after{width:100%;}
+
+.casewarp{
+    position: absolute;
+    width: 78%;
+    height: 82%;
+    top: 17%;
+    right: 5%;
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+@mixin case{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 44%;
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+}
+    .case{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 44%;
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .case1{
+        @include case();
+        left: 50%;
+    }
+    .case2{
+        @include case();
+        top: 50%;
+    }
+    .case3{
+        @include case();
+        top: 50%;
+        left: 50%;
+    }
+    img
+    {   
+        opacity:1.0;
+        filter:alpha(opacity=100); /*  IE8 及更早的版本 */  
+    }
+    img:hover
+    {
+    opacity:0.5;
+    filter:alpha(opacity=50); /*  IE8 以及更早的版本 */ 
+    }
+}
+.footer{
+    width: 98vw;
+    height: 300px;
+}
